@@ -1,0 +1,167 @@
+
+   <!DOCTYPE html>
+<h2>WELCOME TO THE NYERI NATIONAL POLYTECHNIC FEEDBACK SYSTEM</h2> 
+
+<img src="nnp_logo.c37edf102af3526a013d7410b72fda5ee9b3fe29c00194e72a4b5dd2c3ef7d9c (1)" alt="alternatetext">
+
+<html lang="en"> 
+
+<head> 
+
+<marquee style="font-family:Book Antiqua; color: #00ff00" bgcolor="#000080" scrollamount="8">THE NYERI NATIONAL POLYTECHNIC MAIN GATE  FEEDBACK SYSTEM </marquee>
+<head>    
+   <title>Registration Form</title>    
+</head>    
+<body>    
+
+      </style>
+  
+      <script>
+         var connection = window.navigator.connection    ||
+                          window.navigator.mozConnection ||
+                          null;
+         if (connection === null) {
+            document.getElementById('ni-unsupported').classList.remove('hidden');
+         } else if ('metered' in connection) {
+            document.getElementById('nio-supported').classList.remove('hidden');
+            [].slice.call(document.getElementsByClassName('old-api')).forEach(function(element) {
+               element.classList.remove('hidden');
+            });
+ 
+            var bandwidthValue = document.getElementById('b-value');
+            var meteredValue = document.getElementById('m-value');
+ 
+            connection.addEventListener('change', function (event) {
+               bandwidthValue.innerHTML = connection.bandwidth;
+               meteredValue.innerHTML = (connection.metered ? '' : 'not ') + 'metered';
+            });
+            connection.dispatchEvent(new Event('change'));
+         } else {
+            var typeValue = document.getElementById('t-value');
+            [].slice.call(document.getElementsByClassName('new-api')).forEach(function(element) {
+               element.classList.remove('hidden');
+            });
+ 
+            connection.addEventListener('typechange', function (event) {
+               typeValue.innerHTML = connection.type;
+            });
+            connection.dispatchEvent(new Event('typechange'));
+         }
+      
+        
+
+var date=new Date();
+
+var day=date.getDate();
+
+var month=date.getMonth()+1;
+
+var year=date.getFullYear();
+
+document.write("<br>DATE:"+day+"/"+month+"/"+year);
+
+</script>
+
+
+<html>
+
+<body onload="startTime()">
+
+<h2>Time</h2>
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</head> 
+<h2>MAIN GATE FEEDBACK SYSTEM</h2>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScQ24OuNDQ2X5TjNLTf9HrXCv65gDdOg14Yungx6YgW0HoFuA/viewform?usp=pp_url
+">
+    <input type="submit" value="Collect new visitor details/" />
+
+<
+
+</head> 
+<h2>CUSTOMER SATISFACTION FEEDBACK</h2>
+
+<form action="http://google.com"> <input type="submit" value="CUSTOMER FEEDDACK" /> </form>
+   
+<section class="home-about">
+
+
+
+   <div class="image">
+
+      <img src="images/about-img.jpg" alt="">
+
+   </div>
+
+<style>
+body {
+  color: black;
+}
+h2 {
+  color: blue;
+}
+</style>
+</head>
+<body>
+<h1>INSTRUCTIONS</h1>
+<p>Click the (correct customer details) button to begin collecting customers information and submit to database).</p>
+<p>® sandstorm.</p>
+   <div class="content">
+
+      <h3>about us</h3>
+
+      <p>
+      <a href="about.php" class="btn"></a>
+
+   </div>
+
+
+   <div class="credit"> created by <span>© sandstorm</span> | all rights reserved! </div>
+
+
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<marquee></marquee> 
+
+<marquee direction="right"
+
+behavior="alternate"
+
+style="border: Green 2px SOLID"> 
+
+powered by © sandstorm 
+
+</marquee> 
+
+<!-- custom js file link  -->
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
